@@ -64,7 +64,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     internal func loadTable() {
         let storedToDoArray = UserDefaults.standard.object(forKey: "toDos")
         
-        print(storedToDoArray)
+        print(storedToDoArray!)
         
         if let toDoArray = storedToDoArray as? NSArray {
             print("STUFF!!!")

@@ -14,7 +14,7 @@ class SecondViewController: UIViewController {
 
     @IBAction func btnAddItem(_ sender: AnyObject) {
         let storedToDoList = UserDefaults.standard.object(forKey: "toDos")
-        print(storedToDoList)
+        print(storedToDoList!)
         if let toDoArray = storedToDoList as? NSArray {
             var toDoList = toDoArray as! [String]
             toDoList.append((txtToDo?.text)!)
